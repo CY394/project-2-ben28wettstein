@@ -19,3 +19,4 @@ server4     ansible_host=192.168.0.4
 # [anothergroup]
 # server[1:3]
 # anotherserver     ansible_host=192.168.0.10
+10.83.83.1
