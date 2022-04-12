@@ -1,0 +1,14 @@
+- name: BUuild an image with the command module for a remote docker host
+  hosts: 127.0.0.1
+  connection: local
+
+  tasks:
+    - name: build the image
+      command: docker pull sameersbn/redmine:latest
+      
+    - name: run postgreqsql container
+      command : docker run --name=postgresql-redmine -d  --env='DB_NAME=redmine_production' --env='DB_USER=redmine' --env='DB_PASS=password'  --volume=/srv/docker/redmine/postgresql:/var/lib/postgresql  sameersbn/postgresql:9.6-4
+
+    - name: run redmine container at 10083
+      command: docker run --name=redmine -d  --link=postgresql-redmine:postgresql --publish=10083:80  --env='REDMINE_PORT=10083'  --volume=/srv/docker/redmine/redmine:/home/redmine/data  --volume=/srv/docker/redmine/redmine-logs:/var/log/redmine/  sameersbn/redmine:5.0.0
+
