@@ -10,7 +10,6 @@ In order to use the project once the website is deployed, there is an administra
 
 In order to deploy this project, I used Ansible, Dockerand Postgres, as well as the Redmine tutorial. Below is a diagram of the interactions between different software and modules.
 
-![](https://github.com/CY394/project-2-ben28wettstein/blob/master/Diagram.png)
-
+[<img src="https://github.com/CY394/project-2-ben28wettstein/blob/master/Diagram.png">]
 
 <!--more-->
