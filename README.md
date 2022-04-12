@@ -8,7 +8,9 @@ Below is an example of the view of the project and the associated features.
 
 In order to use the project once the website is deployed, there is an administratior account which can validate created accounts and include them on projects.
 
-In order to deploy this project, I used Ansible, Dockerand Postgres, as well as the Redmine tutorial.
+In order to deploy this project, I used Ansible, Dockerand Postgres, as well as the Redmine tutorial. Below is a diagram of the interactions between different software and modules.
+
+![](https://github.com/CY394/project-2-ben28wettstein/blob/master/Diagram.png)
 
 
 <!--more-->
