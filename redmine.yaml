@@ -1,5 +1,5 @@
 - name: BUuild an image with the command module for a remote docker host
-  hosts: 127.0.0.1
+  hosts: 10.83.83.1
   connection: local
 
   tasks:
